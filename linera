@@ -1,0 +1,9 @@
+[toolchain]
+channel = "1.80.0"
+components = [ "clippy", "rustfmt", "rust-src" ]
+targets = [ "wasm32-unknown-unknown" ]
+profile = "minimal"
+
+git clone https://github.com/linera-io/linera-protocol.git
+cd linera-protocol
+git checkout -t origin/devnet_2024_09_04  # Current release branch
